@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+/* .flying {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .form select {
+            width: 150px;
+            margin-right: 10px;
+        }
+         .to select {
+            width: 150px;
+            margin-right: 0px;
+        } */
+     
+
+        .container {
+        display: flex;
+        margin-bottom: 10px;
+        }
+
+        .container > div {
+        margin: 5px;
+        padding: 2px;
+        font-size: 15px;
+        }
+
+ </style>
+  
+</head>
+<body>
+    <form>
+<div class="container">
+   <div>
+        <div>Flying From
+            <br/>
+            <select id="flyingFrom">
+                <option value="Bangkok">Bangkok</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Lao">Lao</option>
+                <option value="vietnam">vietnam</option>
+            </select>
+        </div>
+
+        <div>To
+            <br/>
+            <select id="To">
+                <option value="Bangkok">Bangkok</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Lao">Lao</option>
+                <option value="vietnam">vietnam</option>
+            </select>
+        </div>
+    </div>
+</div>
+    
+<div class="container">  
+    
+    <div id="date">
+        <div>departing<br/>
+            <input type="date" name="departing" value="2020-01-01">
+         </div>
+        
+         <div>returning<br/>
+            <input type="date" name="returning" value="2020-01-01">
+         </div>
+        
+    </div>
+</div>
+
+<div class="container">
+    <div>Adult<br>
+        <input type="number" style="width: 50px;">
+    </div>
+    <div>child<br>
+        <input type="number" style="width: 50px;">
+    </div>
+    <div>infent<br>
+        <input type="number" style="width: 50px;">
+    </div>
+    <div>currency<br>
+        <select id="money">
+            <option value="USD">USD</option>
+            <option value="THB">THB</option>
+            <option value="TWD">TWD</option>
+            <option value="SGD">SGD</option>
+        </select>
+    </div>
+ 
+</div>
+
+    <div>
+        <input type="submit" value="submit">
+    </div>
+
+</form>
+        
+</body>
+</html>
