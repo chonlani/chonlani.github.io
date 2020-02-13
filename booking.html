@@ -2,31 +2,24 @@
 <html lang="en">
 <head>
     <style>
-
-/* .flying {
-            display: flex;
-            margin-bottom: 20px;
-        }
-        
-        .form select {
-            width: 150px;
-            margin-right: 10px;
-        }
-         .to select {
-            width: 150px;
-            margin-right: 0px;
-        } */
-     
-
-        .container {
+       .container{
         display: flex;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
+        grid-gap: 2cm;
+
         }
 
-        .container > div {
-        margin: 5px;
+        .container1 {
+        /* margin: 5px;
         padding: 2px;
-        font-size: 15px;
+        font-size: 15px; */
+        display: flex;
+        grid-gap: 1cm;
+        }
+    
+        .container2{
+            display: flex;
+            grid-gap: 0.5cm;
         }
 
  </style>
@@ -34,10 +27,10 @@
 </head>
 <body>
     <form>
+        <h1>Booking Flight</h1>
 <div class="container">
-   <div>
-        <div>Flying From
-            <br/>
+        <div>
+            <p>Flying from</p>
             <select id="flyingFrom">
                 <option value="Bangkok">Bangkok</option>
                 <option value="Singapore">Singapore</option>
@@ -46,8 +39,8 @@
             </select>
         </div>
 
-        <div>To
-            <br/>
+        <div>
+            <p>To</p>
             <select id="To">
                 <option value="Bangkok">Bangkok</option>
                 <option value="Singapore">Singapore</option>
@@ -55,34 +48,42 @@
                 <option value="vietnam">vietnam</option>
             </select>
         </div>
-    </div>
+    
 </div>
     
-<div class="container">  
+<div class="container1">  
     
     <div id="date">
-        <div>departing<br/>
+        <div>
+            <p>Departing</p>
             <input type="date" name="departing" value="2020-01-01">
+            </div>
          </div>
         
-         <div>returning<br/>
+         <div>
+            <p>Departing</p>
             <input type="date" name="returning" value="2020-01-01">
+            
          </div>
         
     </div>
 </div>
 
-<div class="container">
-    <div>Adult<br>
+<div class="container2">
+    <div>
+        <p>Adult</p> 
         <input type="number" style="width: 50px;">
     </div>
-    <div>child<br>
+    <div>
+       <p>child</p>
         <input type="number" style="width: 50px;">
     </div>
-    <div>infent<br>
+    <div>
+        <p>infent</p> 
         <input type="number" style="width: 50px;">
     </div>
-    <div>currency<br>
+    <div>
+       <p>currency</p> 
         <select id="money">
             <option value="USD">USD</option>
             <option value="THB">THB</option>
@@ -92,6 +93,7 @@
     </div>
  
 </div>
+<br>
 
     <div>
         <input type="submit" value="submit">
